@@ -24,7 +24,7 @@ function sendMessage(tab, message, cb) {
 }
 
 function updateIcon() {
-  var path = state.play ? 'play.png' : 'pause.png';
-  chrome.browserAction.setIcon({path: path}); 
+  //var path = state.play ? 'play.png' : 'pause.png';
+  //chrome.browserAction.setIcon({path: path}); 
 }
 
