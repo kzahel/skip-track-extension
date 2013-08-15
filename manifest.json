@@ -1,0 +1,26 @@
+{
+   "name": "Skip Track Spotify Web",
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+          "19":"images/skip19.png",
+	  "38":"images/skip38.png"
+      }
+   },
+   "content_scripts": [ {
+      "js": [ "content.js" ],
+      "matches": [ "https://play.spotify.com/*" ]
+   } ],
+   "description": "Control Spotify web player.",
+   "icons": {
+      "128": "images/skip128.png",
+      "16": "images/skip16.png",
+      "48": "images/skip48.png"
+   },
+   "permissions": ["notifications"],
+   "manifest_version": 2,
+   "version": "0.0.1",
+   "web_accessible_resources": [ "inject.js" ]
+}
