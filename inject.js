@@ -26,7 +26,7 @@ window.addEventListener("message", function(evt) {
 	  }
 */
 	  var r = new Spotify.Bridge.Responder();
-	  r.trigger('player_skip_to_next', [{id:'extension'}]);
+	  r.trigger('player_skip_to_next', {args:['main']});
 
 	  // if want just playpause
 	  //var r = new Spotify.Bridge.Responder();
